@@ -51,6 +51,17 @@
    1 头文件包含
 *****************************************************************************/
 #include "ATCmdProc.h"
+extern VOS_UINT32 AT_SetFacAuthPubkeyExPara(
+        VOS_UINT8                           ucIndex,
+        VOS_UINT32                          ulCurrIndex,
+        VOS_UINT32                          ulTotal,
+        VOS_UINT32                          ulParaLen,
+        VOS_UINT8                          *pucPubKeyData
+);
+extern VOS_UINT32 AT_SetFacAuthPubkeyPara(
+    VOS_UINT8                           ucIndex,
+    AT_FACAUTHPUBKEY_SET_REQ_STRU      *pstFacAuthPubKey
+);
 #include "AtCheckFunc.h"
 #include "PppInterface.h"
 #include "Taf_MmiStrParse.h"
